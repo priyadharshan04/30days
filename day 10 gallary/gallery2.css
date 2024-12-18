@@ -1,0 +1,105 @@
+body{
+   
+    height: max-content;
+ 
+
+}
+header {
+    font-family: monospace;
+    border-radius: 0px 0px 10px 10px;
+    background-color: #ffffff;
+    color: rgb(102, 100, 100);
+    text-align: center;
+    padding: 10px 0;
+    position: sticky;
+    top: 0;
+    z-index: 1000; box-shadow: 2px 2px 6px rgb(0, 0, 0,0.5);
+}
+.container{
+    height: max-content;
+    border-radius: 20px;
+    display: flex;
+    justify-content: space-around;
+    padding: 20px;
+    gap: 30px;
+    flex-wrap: wrap;
+    box-shadow: 2px 2px 6px rgb(0, 0, 0,0.5);
+}
+.column{
+    display: flex;
+    gap:20px;
+    flex-direction: column;
+}
+.picture img{
+    width: 200px;
+    height: inherit;
+    border-radius: 20px;
+    transition: 200ms ease-in-out;
+    --scale:1;
+    transform: scale(var(--scale));
+}
+.con1{
+    position: relative;
+}
+.content .profile{
+    opacity: 0;
+    color:rgb(0, 0, 0);
+    position: absolute;
+    top:1.5em;
+    left:1em;
+    font-family: cursive;
+    text-decoration: none;
+    transition: 200ms ease-in-out;
+
+}
+.content .save{
+    opacity: 0;
+    position: absolute;
+    top:1.5em;
+    right: 1em;
+    height: 40px;
+    width: 60px;
+    border-radius: 160px;
+    background-color: rgb(237, 56, 56);
+    color: #fff;
+    border: none;
+    box-shadow: 2px 2px 6px rgb(0, 0, 0,0.5);
+    transition: 200ms ease-in-out;
+}
+.content .download{
+    opacity: 0;
+    position: absolute;
+    bottom: 1.5em;
+    right: 4em;
+    height: 30px;
+    width: 30px;
+    border: none;
+    border-radius: 50%;
+    box-shadow: 2px 2px 6px rgb(0, 0, 0,0.5);
+    transition: 200ms ease-in-out;
+}
+.content .more{
+    opacity: 0;
+    position: absolute;
+    bottom:1.5em;
+    right: 1em;
+    height: 30px;
+    width: 30px;
+    border: none;
+    border-radius: 50%;
+    box-shadow: 2px 2px 6px rgb(0, 0, 0,0.5);
+    transition: 200ms ease-in-out;
+
+
+}
+.con1:hover .profile,
+.con1:hover .save,
+.con1:hover .download,
+.con1:hover .more{
+    opacity: 1;
+}
+.con1:hover img{
+    --scale:1;
+    opacity: 0.7;
+    box-shadow: 2px 2px 6px rgb(0, 0, 0,0.5);
+}

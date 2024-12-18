@@ -1,0 +1,64 @@
+*{
+    font-family: monospace;
+}
+body{
+    display: flex;
+    align-items: center;
+    height: 100vh;
+    justify-content: center;
+}
+.container{
+    background-color: antiquewhite;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    height: 300px;
+    width: 300px;
+    border-radius: 20px;
+    box-shadow: 2px 3px 6px rgb(0, 0, 0,0.5);
+}
+input{
+    display: none;
+}
+.container .button{
+    font-size: 20px;
+    border-radius: 20px;
+    margin-bottom: 15px;
+
+
+}
+.container .button:hover,
+.container label:hover {
+    cursor: pointer;
+    background-color: azure;
+}
+.container label {
+    display: flex;
+    align-items: center;
+    border-radius: 10px;
+    padding: 8px 20px;
+    transition: all 0.2s ease-in;
+}
+.container .button label::before {
+    content: "";
+    background-color: rgb(0, 0, 0);
+    height: 15px;
+    width: 15px;
+    margin-right: 12px;
+    border-radius: 50%;
+    transition: all 0.2s ease-in;
+}
+
+.container .button input:checked+label::before {
+    border-radius: 50%;
+    background-color: rgb(255, 255, 255);
+    box-shadow: 2px 2px 6px rgb(0, 0, 0,0.5);
+
+}
+
+.container .button input:checked+label {
+    color: aliceblue;
+    background-color: rgb(152, 147, 147);
+    box-shadow: 2px 2px 6px rgb(0, 0, 0,0.5);
+}

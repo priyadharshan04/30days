@@ -1,0 +1,94 @@
+body {
+    height: 97vh;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+}
+
+.round {
+    height: 257px;
+    width: 257px;
+    background-color: black;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.center{
+    background-color: black;
+    width: 10px;
+    height: 10px;
+    position: absolute;
+    border-radius: 50%;
+
+}
+
+.screen {
+    height: 200px;
+    width: 200px;
+    background-color: rgb(84, 9, 9);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+.hand {
+    height: 60px;
+    width: 10px;
+    background-color: rgb(224, 178, 139);
+    margin: 10px;
+    border-radius: 30px;
+    position: relative;
+}
+
+.min-hand{
+    height: 85px;
+    top: 30px;
+    right: 36px;
+    transform: rotate(35deg);
+    background-color: ;
+
+}
+
+.hour-hand{
+    rotate: 0deg;
+    bottom: 25px;
+    left: 15px;
+}
+
+.strap{
+    background-color: rgb(253, 30, 44);
+    display: inline-block;
+    height: 220px;
+    width: 180px;
+    z-index: -1;
+    position: relative;
+}
+
+.strap-top {
+    border-radius: 50px;
+    top: 40px;
+}
+
+.strap-bottom{
+    left: 35px;
+    border-radius: 50px;
+    bottom: 50px;
+}
+
+.container::after{
+    content: '';
+    background-color: black;
+    border-radius: 7px;
+    height: 20px;
+    width: 20px;
+    display: inline-block;
+    position: relative;
+    top: -330px;
+    left: 60px;
+}

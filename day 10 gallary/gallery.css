@@ -1,0 +1,44 @@
+body{
+    height: max-content;
+    display: flex;
+    align-items:center ;
+    justify-content: center;
+    background-color: white;
+    padding: 40px 0px;
+
+
+}
+.container{
+    height: max-content;
+    width: 90%;
+    gap:20px;
+    display:flex;
+    justify-content: center;
+    border-radius: 20px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.5);
+    padding: 20px;
+    flex-wrap: wrap;
+
+
+}
+.column{
+    display: flex;
+    gap: 20px;
+    flex-direction: column;
+
+}
+img{
+    border-radius: 20px;
+    width: 200px;
+    height: inherit;
+   object-fit: cover;
+   position: relative;
+   --scale:1;
+   transform: scale(var(--scale));
+
+}
+img:hover{
+    opacity: 0.7;
+    --scale:1.05;
+     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.5);
+}

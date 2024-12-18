@@ -1,0 +1,19 @@
+.main{
+    display: grid;
+    grid-template-columns:repeat(auto-fill,minmax(200px,1fr));
+    grid-gap:1em;
+    row-gap:20px;
+    
+}
+.main img{
+    width: 200px;
+    height: inherit;
+    border-radius: 20px;
+    display:block;
+    object-fit: cover;
+}
+#i1 {
+    height: 200px;
+    overflow: hidden; 
+    
+}

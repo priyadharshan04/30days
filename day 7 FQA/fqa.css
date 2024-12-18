@@ -1,0 +1,75 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: monospace;
+    box-sizing: border-box;
+}
+body{
+    background-color: antiquewhite;
+}
+h1{
+    margin-top: 20px;
+    margin-left: 45%;
+}
+
+.container{
+    margin: auto ;
+    width: 550px;
+    display: flex;
+    align-items: center;
+    justify-content:center;
+    flex-direction: column;
+    
+
+}
+.container li{
+    list-style: none;
+    width: 500px;
+    padding: 10px;
+    border-radius: 10px;
+    background-color: aliceblue;
+    margin: 2px;
+    box-shadow: 0px 4px 4px rgb(0, 0, 0,0.3);
+
+}
+.container li label{
+    display: flex;
+    align-items: center;
+    font-size: 16px;
+    padding: 10px;
+    font-weight: 600;
+    cursor: pointer;
+}
+label::before{
+    content: "+";
+    margin-right: 5px;
+    font-size: 16px;
+    font-weight: 600;
+
+}
+input[type="radio"]{
+    display: none;
+}
+.container .content{
+    color: rgb(0, 0, 0);
+    padding: 0 10px;
+    line-height: 16px;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.5ms,padding 0.5s;
+
+}
+.container input[type="radio"]:checked + label + .content{
+    max-height:400px;
+    padding: 10px 10px 20px;
+
+}
+.container input[type="radio"]:checked + label::before{
+    content: "-";
+    font-size: 16px;
+    font-weight: 600;
+}
+.container input[type="radio"]:unchecked + label + .content{
+    max-height: 0;
+    overflow: hidden;
+}

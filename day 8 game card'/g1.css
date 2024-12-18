@@ -1,0 +1,70 @@
+To achieve the effect where both `.card::after` and `.info` are shown when hovering over the `.card`, you need to adjust your CSS selectors. Currently, you're using `.card:hover::after` to show `.card::after` and `.info:hover` to show `.info`. Instead, you can combine these selectors to show both when hovering over `.card`. Here's how you can modify your CSS:
+
+```css
+.card:hover::after,
+.card:hover .info {
+    opacity: 1;
+}
+```
+
+This CSS rule targets both `.card::after` and `.info` when hovering over `.card`. Here's the full corrected CSS:
+
+```css
+body {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.container {
+    width: 900px;
+    height: 300px;
+    border-radius: 20px;
+    padding: 20px;
+    background-color: antiquewhite;
+    display: flex;
+}
+
+.card {
+    position: relative;
+    height: 300px;
+    width: 240px;
+    background-color: aliceblue;
+}
+
+.card::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    border-radius: 10px;
+    opacity: 0;
+    transition: 200ms ease-in-out;
+    height: 300px;
+    width: 240px;
+    background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0), rgba(255, 255, 255, 0.3), rgba(0, 0, 0, 0.8));
+}
+
+.card:hover::after,
+.card:hover .info {
+    opacity: 1;
+}
+
+.f1 {
+    position: absolute;
+    border-radius: 10px;
+    height: 300px;
+}
+
+.info {
+    color: rgb(255, 255, 255);
+    opacity: 0;
+    position: absolute;
+    top: 8em;
+    margin: 10px;
+    width: 220px;
+}
+```
+
+With this change, both the `.card::after` pseudo-element and the `.info` element will show when hovering over the `.card`.

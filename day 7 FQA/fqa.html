@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FAQ Accordion Section using HTML CSS </title>
+    <link rel="stylesheet" href="fqa.css">
+</head>
+
+<body>
+    <h1>FQA</h1><BR>
+    <ul class="container">
+       
+        <li>
+            <input type="radio" name="container" id="first">
+            <label for="first">WHAT IS DSA?</label>
+            <div class="content">
+                <p>
+                    Data Structures and Algorithms (DSA) form the cornerstone of computer science, serving as the bedrock upon which efficient and scalable software solutions are built. Data structures provide a framework for organizing and storing data in a systematic manner, enabling easy retrieval, manipulation, and management. From simple arrays and linked lists to complex trees and graphs, each data structure offers unique advantages and trade-offs, allowing programmers to tailor their choice based on specific requirements and performance considerations
+                </p>
+            </div>
+        </li>
+        <li>
+            <input type="radio" name="container" id="second">
+            <label for="second">Where is DSA used?</label>
+            <div class="content">
+                <p>
+                    Software Development: DSA is extensively used in software development for designing efficient algorithms, implementing data structures to store and manipulate data, and optimizing code for performance.
+                    Web Development: DSA plays a crucial role in web development for tasks such as sorting and searching data, managing session information, implementing data caching mechanisms, and optimizing database queries.
+                    Data Science and Machine Learning: DSA is utilized in data preprocessing, feature engineering, and algorithm design for tasks such as clustering, classification, regression, and recommendation systems.
+                    Computer Graphics and Gaming: DSA is employed in computer graphics for tasks such as rendering, collision detection, pathfinding, and simulation of complex systems in video games.
+                </p>
+            </div>
+        </li>
+        <li>
+            <input type="radio" name="container" id="third">
+            <label for="third">Concepts in DSA?</label>
+            <div class="content">
+                <p>Abstract Data Types (ADTs): Abstract Data Types define a set of operations on data without specifying the implementation details. Examples include stacks, queues, lists, trees, and graphs.
+Arrays: Arrays are contiguous blocks of memory used to store elements of the same data type. They offer constant-time access to elements using indices.
+Linked Lists: Linked lists are linear data structures consisting of nodes where each node contains a data element and a reference (pointer) to the next node. They offer dynamic memory allocation and efficient insertion and deletion operations.
+Stacks: Stacks are abstract data types that follow the Last-In-First-Out (LIFO) principle. They support two primary operations: push (inserting an element) and pop (removing the top element).
+Queues: Queues are abstract data types that follow the First-In-First-Out (FIFO) principle. They support two primary operations: enqueue (adding an element to the rear) and dequeue (removing an element from the front).
+        </li>
+        <li>
+            <input type="radio" name="container" id="fourth">
+            <label for="fourth">Undo and Redo use what concept?</label>
+            <div class="content">
+                <p>
+                    "stack."
+
+Undo: When an action is performed in an application (e.g., typing text, moving an object), the state of the application before the action is often stored. This state can be stored in a stack data structure. When the user triggers an "undo" action, the application pops the most recent state from the stack and restores it, effectively undoing the last action.
+Redo: Similarly, when an "undo" action is performed, the state of the application before the "undo" action is pushed onto another stack, often called the "redo" stack. If the user triggers a "redo" action, the application pops the most recent state from the redo stack and restores it, effectively redoing the last undone action.
+                </p>
+            </div>
+        </li>
+       
+    </ul>
+
+
+</body>
+
+</html>
